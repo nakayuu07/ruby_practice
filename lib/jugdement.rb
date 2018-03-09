@@ -1,4 +1,4 @@
-points = [100,100,60]
+points = [100,80,60]
 subject_count = points.size
 
 
