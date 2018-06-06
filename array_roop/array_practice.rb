@@ -144,7 +144,7 @@
 # end
 #
 #
-
+#
 # dimentions = [
 #   [10,20],
 #   [30,40],
@@ -157,7 +157,7 @@
 #   height = dimention[1]
 #   areas << withd * height
 # end
-
+#
 # p areas
 #
 # sum = 0
@@ -179,11 +179,11 @@
 # 14.downto(-10) { |n| a << n }
 #
 # p a
-
+#
 # a = []
 # 1.step(100,2) { |n| a << n }
 # p a
-
+#
 # a = []
 # while a.size < 5 do a << 1 end
 #
@@ -200,14 +200,29 @@
 # end while false
 #
 # p a
-
+#
 # numbers = [1,2,3,4]
 # sum = 0
-#   for n in numbers do
-#     sum += n
+#   numbers.each do |n|
+#     p sum_value = n.even? ? n * 10 : n * 2
+#     sum += sum_value
 #   end
 #
 # p sum
 
-
+#
+#
 # p (1..4).map { |n| n * 10 }
+#
+
+
+# a = [1,2,3]
+# b = [1,2,*a,3,4]
+# p b
+
+# d = %w(a b c)
+# p d
+
+[*1..4].each do |num|
+  p num
+end
