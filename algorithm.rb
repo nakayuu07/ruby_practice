@@ -466,3 +466,16 @@
 # a = ["1","2","3","a","c"]
 # b = []
 # b  <<  a.delete_if {|item| item =~ /[0-9]/ }
+
+
+# books = ["jump","korokoro","magagine"]
+#
+# books.delete_if do |book|
+#   puts book.match(/a-z/)
+# end
+
+def add(e,g)
+  p e + g
+end
+
+add(1,2)
