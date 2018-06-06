@@ -1,5 +1,6 @@
+
 class Library < Book
-  
+
 end
 
 class Book
