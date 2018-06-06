@@ -1,3 +1,4 @@
+
 def change_string(string)
   string_sprit = string.split("")
   string_array = []

@@ -1,11 +1,10 @@
-points = [100,80,60]
+points = [100,80]
 subject_count = points.size
-
 
 def your_record(points, subject_count)
   sum = 0
   points.each do |point|
-    sum += point
+    sum  =+ point
   end
 
   full = subject_count * 100
@@ -36,7 +35,7 @@ def final_jugde(points, subject_count)
   record = your_record(points, subject_count)
   pass_or_failure = pass_or_failure?(points, subject_count)
   if (record == "A") && (pass_or_failure == "合格")
-    puts "あなたの成績は#{record}です！判定は.....#{pass_or_failure}です！！素晴らしい！！"
+    puts "あなたの成績はr#{record}です！判定は.....#{pass_or_failure}です！！素晴らしい！！"
   else
     puts "あなたの成績は#{record}です！判定は.....#{pass_or_failure}です"
   end
