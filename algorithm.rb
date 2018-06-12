@@ -474,8 +474,12 @@
 #   puts book.match(/a-z/)
 # end
 
-def add(e,g)
-  p e + g
-end
-
-add(1,2)
+# i = 0
+# for i in 0..39 do
+#    i = i + 1
+#    if i % 3 == 0
+#        puts("Hoge")
+#    else
+#        puts(i)
+#    end
+# end

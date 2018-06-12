@@ -49,7 +49,3 @@
 # p numbers.each { |n| sum += n}
 #
 # p sum
-
-fruits = ["apple" "orange" "melon"]
-
-p fruits
