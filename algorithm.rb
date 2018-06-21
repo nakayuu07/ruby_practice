@@ -483,3 +483,65 @@
 #        puts(i)
 #    end
 # end
+
+# a = [1,2,3]
+# #
+# b = a.map do |c|
+#    c * 2
+# end
+# #
+# p b
+# #
+# b = []
+# a.each do |c|
+#   b << c * 2
+# end
+# p b
+# # #
+# b = a.map do |c|
+#   c * 2
+# end
+
+
+# bingo_number = [1,2,3,4,5,6]
+# new_bingo_number = []
+# bingo_number.each do |s|
+#   new_bingo_number << s.to_s
+# end
+#
+# new_bingo_number =  bingo_number.map do |s|
+#    s.to_s
+# end
+#
+# new_bingo_number = bingo_number.map { |s| s.to_s}
+#
+# new_bingo_number = bingo_number.map(&:to_s)
+
+# def add(x,y)
+#   x + y
+# end
+#
+# add(1,2)
+
+
+# foo = "aaa"
+#
+# def a
+#   p foo
+# end
+
+
+#
+# def add(**a)
+#   a
+# end
+#
+# p add(a:2)
+#
+# def add(*a,b)
+#   a.push(b)
+# end
+#
+# p add(1,2,3)
+
+# p (1..5).include?(5)

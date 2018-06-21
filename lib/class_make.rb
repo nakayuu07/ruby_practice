@@ -662,24 +662,104 @@
 # p User.new
 # p User.new
 
+# class Parent
+#   def hello
+#     puts "hello, Parents class"
+#   end
+# end
+#
+# class Child < Parent
+#   def hello
+#     super
+#
+#     puts "hello, child class"
+#   end
+# end
+#
+# child = Child.new
+# child.hello
 
-class Emoji
-  def 😄
-    "楽しい"
-  end
+# class Whotever
+# end
+#
+# p Whotever.superclass
 
-  def 😆
-    "嬉しい"
-  end
+module Brainfsck
+  class User
+    attr_accessor :name
 
-  def 😭
-    "悲しい"
-  end
+    def initialize(name)
+      @name = name
+    end
 
-  def 🏧
-    "金欠"
+    def hello
+       "hello!! #{@name}( ^ω^ )"
+    end
   end
 end
 
-e = Emoji.new
-p  "#{e.😄}けど#{e.🏧}"
+# module Whitespace
+#   class Parser
+#     def hello
+#       p "b"
+#     end
+#   end
+# end
+
+p a = Brainfsck::User.new("bob")
+# p b = Whitespace::Parser.new
+# a.hello
+# b.hello
+p a.hello
+p a.name
+p a.class
+# p b.class
+
+# a.hello
+
+# class Reji
+#   SHOUHIZEI = 0.05
+#
+#   def initialize(init=0)
+#     @sum = init
+#   end
+#
+#   def kounyuu(kingaku)
+#     @sum += kingaku
+#     p("お買い上げ:", kingaku, "¥n")
+#   end
+#
+#   def goukei
+#     return @sum * (1 + SHOUHIZEI)
+#   end
+# end
+#
+# reji = Reji.new
+# reji.kounyuu(100)
+# reji.kounyuu(80)
+# p("合計金額:", reji.goukei, "¥n")
+#
+# p("消費税率:", Reji::SHOUHIZEI)
+
+
+# class Emoji
+#   def 😄
+#     "楽しい"
+#   end
+#
+#   def 😆
+#     "嬉しい"
+#   end
+#
+#   def self.😭
+#     "悲しい"
+#   end
+#
+#   def 🏧
+#     "金欠"
+#   end
+# end
+#
+# p Emoji.😭
+# e = Emoji.new
+# p  "#{e.😄}けど#{e.🏧}"
