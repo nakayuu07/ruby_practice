@@ -26,17 +26,19 @@
 
 
 p "生徒の数は何人ですか？"
-student_count = gets.to_i
+  student_count = gets.to_i
 p "生徒のお名前を入力してください"
-counts = []
+  counts = []
 
 student_and_count = []
 (1..student_count).each_with_index do |n, i|
   puts "・生徒#{i + 1}のお名前は？"
   name = gets
+
   puts "・#{name[0..-2]}さんの点数を入力しましょう!"
   count = gets.to_i
   counts << count
+
   student_and_count << [count,name]
 end
 

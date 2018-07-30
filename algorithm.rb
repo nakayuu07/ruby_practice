@@ -105,7 +105,7 @@
 # #
 # p sample("aaaaaaaaa")
 # p sample("askdskd")
-#
+
 # 文字列中に含まれる単語の個数を単語ごとにカウントして、ハッシュとして表現してください。
 # a = [:a,:b,:c]
 #
@@ -254,25 +254,11 @@
 # puts sample_word("aaaaaaaaa")
 #
 #
-# def greatest_common_division(a,b)
-#   while true
-#     c = a % b if a > b
-#     if c == 0
-#       return b
-#       break
-#     end
-#     a = b
-#     b = c
-#   end
-# end
-#
-# p greatest_common_division(30,20)
-#
-#
+
 # def add(a,b)
 #   a + b
 # end
-#
+
 # a = 1
 # b = 1
 #
@@ -545,3 +531,122 @@
 # p add(1,2,3)
 
 # p (1..5).include?(5)
+
+
+# laungages = %w(ruby rails java)
+#
+# laungages.each do |laungage|
+#   if  laungage == "ruy"
+#     p "ruby"
+#     break "aaa"
+#   end
+# end
+
+
+# c = ""
+# b = []
+# d = {}
+# @a
+#
+# p @a.nil?
+# p b.empty?
+# p c.empty?
+# p d.empty?
+
+# target = [1,2,3,4]
+#
+# def a(target)
+#   target.shift
+# end
+#
+#  a(target)
+#
+#
+# p target
+
+# def add(x,y)
+#   x + y
+# end
+# a = 1
+# b = 2
+# p add(a,b)
+
+# moji = "Hello"
+# mojis = moji.split("")
+# mojis.each {|moji| p moji}
+
+
+# a = [1,2,3,4,5]
+#
+# def add(array)
+#   array.inject(0){ |sum, n| sum + n }
+# end
+#
+# p add(a)
+
+# a = [1,2,3].sort
+# b = [1,3,2].sort
+#
+# p a.eql?(b)
+#
+# a = {a: "aaa"}
+# b = {a: "aaa"}
+#
+# p a.equal?(b)
+# p a.eql?(b)
+# p a == b
+# p a === b
+# a = "ruby"
+# b = "ruby"
+#
+# p a == b
+# p a === b
+# p a.equal?(b)
+# p a.eql?(b)
+# p "==================="
+#
+# a = 1
+# b = "1".to_i
+#
+# p a == b
+# p a === b
+# p a.equal?(b)
+# p a.eql?(b)
+
+# def add(a,b)
+#   a + b
+#   a
+#   b
+# end
+#
+# p add(1,2)
+
+# def repeat_string(str)
+#   #以下にコードを記述する
+#
+#   if str.size <= 4
+#     puts str * 3
+#   else
+#     puts str.slice(0,4) * 3
+#   end
+# end
+#
+# repeat_string('Python')
+# repeat_string('Go')
+# repeat_string('C++')
+
+
+# def add()
+#   p a + b
+# end
+#
+# add(1,2)
+mojinagasa = "12345"
+mojinagasa = mojinagasa.split("")
+str_mojinagasa = []
+i = 0
+for mojinagasa in [] do
+mojinagasa[i] != nil
+i += 1
+end
+puts i

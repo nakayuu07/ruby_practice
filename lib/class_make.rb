@@ -24,32 +24,32 @@
 # ##############################
 # class User
 # #
-#   attr_accessor :name, :age, :from
+#   attr_accessor :name
 #
 #   def initialize(name, age, from)
 #     @name = name
 #     @age = age
 #     @from = from
 #   end
-
-  # def name
-  #   @name
-  # end
-  #
-  # def name=(value)
-  #   @name = value
-  # end
-  #
-  # def age
-  #   @age
-  # end
-  #
-  # def age=(value)
-  #   @age = value
-  # end
-
+#
+#   def name
+#     @name
+#   end
+#
+#   def name=(value)
+#     @name = value
+#   end
+#
+#   def age
+#     @age
+#   end
+#
+#   def age=(value)
+#     @age = value
+#   end
+#
 # end
-###############################
+# ###############################
 
 # p user = User.new("Alice", 23, "usa")
 # p user.name
@@ -401,18 +401,18 @@
 # p Product::DEFFAULT_PRICE = 3000
 #
 #
-# class Product
-#   NAME = "A product"
-#   SOME_NAMES = ["foo", "bar", "baz"]
-#   SOME_PRICES = {"foo" => 1000, "bar" => 2000, "baz" => 3000}
-# end
-#
-# p Product::NAME.upcase!
-# Product::NAME
-#
-# Product::SOME_NAMES << "hoge"
-# p Product::SOME_NAMES
-#
+class Product
+  NAME = "A product"
+  SOME_NAMES = ["foo", "bar", "baz"]
+  SOME_PRICES = {"foo" => 1000, "bar" => 2000, "baz" => 3000}
+end
+
+p Product::NAME.upcase!
+p Product::NAME
+
+p Product::SOME_NAMES << "hoge"
+p Product::SOME_NAMES
+
 # class User
 #   def hello
 #     "hello"
@@ -684,35 +684,35 @@
 #
 # p Whotever.superclass
 
-module Brainfsck
-  class User
-    attr_accessor :name
-
-    def initialize(name)
-      @name = name
-    end
-
-    def hello
-       "hello!! #{@name}( ^ω^ )"
-    end
-  end
-end
-
-# module Whitespace
-#   class Parser
+# module Brainfsck
+#   class User
+#     attr_accessor :name
+#
+#     def initialize(name)
+#       @name = name
+#     end
+#
 #     def hello
-#       p "b"
+#        "hello!! #{@name}( ^ω^ )"
 #     end
 #   end
 # end
-
-p a = Brainfsck::User.new("bob")
-# p b = Whitespace::Parser.new
-# a.hello
-# b.hello
-p a.hello
-p a.name
-p a.class
+#
+# # module Whitespace
+# #   class Parser
+# #     def hello
+# #       p "b"
+# #     end
+# #   end
+# # end
+#
+# p a = Brainfsck::User.new("bob")
+# # p b = Whitespace::Parser.new
+# # a.hello
+# # b.hello
+# p a.hello
+# p a.name
+# p a.class
 # p b.class
 
 # a.hello

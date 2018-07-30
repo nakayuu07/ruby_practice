@@ -48,7 +48,3 @@
 # p numbers.each { |n| sum += n}
 #
 # p sum
-
-class Parent
-  def hello
-    puts 

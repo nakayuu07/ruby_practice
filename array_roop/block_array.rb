@@ -19,3 +19,25 @@
 # numbers = [1,2,3,4,5,6]
 # even_number = numbers.find{ |n| n.even?}
 # p even_number
+
+# a = Proc.new{|name| name.upcase}
+# people = %W(honda kagawa osako)
+#
+# p people.each(&a)
+
+# def block_sample
+#   p "hands up"
+#   yield
+# end
+#
+# block_sample do
+#   p "work"
+# end
+
+
+a =
+b =
+c ="a"
+
+
+p a
