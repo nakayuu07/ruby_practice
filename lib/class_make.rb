@@ -282,6 +282,10 @@
 #
 # class User
 #
+#   def a
+#     hello
+#   end
+#
 #   private
 #     def hello
 #       "hello"
@@ -290,8 +294,8 @@
 # end
 #
 # user = User.new
-# p user.hello
-#
+# p user.a
+# #
 # class User
 #   def hello
 #     "hello, i am #{name}"
@@ -401,17 +405,17 @@
 # p Product::DEFFAULT_PRICE = 3000
 #
 #
-class Product
-  NAME = "A product"
-  SOME_NAMES = ["foo", "bar", "baz"]
-  SOME_PRICES = {"foo" => 1000, "bar" => 2000, "baz" => 3000}
-end
-
-p Product::NAME.upcase!
-p Product::NAME
-
-p Product::SOME_NAMES << "hoge"
-p Product::SOME_NAMES
+# class Product
+#   NAME = "A product"
+#   SOME_NAMES = ["foo", "bar", "baz"]
+#   SOME_PRICES = {"foo" => 1000, "bar" => 2000, "baz" => 3000}
+# end
+#
+# p Product::NAME.upcase!
+# p Product::NAME
+#
+# p Product::SOME_NAMES << "hoge"
+# p Product::SOME_NAMES
 
 # class User
 #   def hello
@@ -763,3 +767,21 @@ p Product::SOME_NAMES
 # p Emoji.😭
 # e = Emoji.new
 # p  "#{e.😄}けど#{e.🏧}"
+
+
+# class Test
+#   def initialize(args)
+#     p args
+#     @chainring = args.fetch(:chainring, 40)
+#     @cog       = args.fetch(:cog, 18)
+#     @wheel     = args[:wheel]
+#   end
+# end
+#
+# p Test.new(chainring: "a", cog: false, c: "c")
+
+# image1 = {  :alt => "monkey" }
+# image2 = { :src => 320, :height => 240 }
+# image3 = image1.merge(image2)
+# p image3[:src], image3[:width]
+# p image3

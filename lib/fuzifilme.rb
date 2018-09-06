@@ -13,32 +13,36 @@ def rot_13(str)
 end
 
 p rot_13("HElLo")
+#
+#
+# class Alphabet
+#   attr_reader :data
+#   def initialize(num)
+#     @data = ("a".."z").to_a
+#     @size = @data.size
+#     @convert_data = ""
+#     @num = num
+#   end
+#
+#   def search_index(word)
+#     @data.index(word)
+#   end
+#
+#   def rotate_index(word)
+#     (search_index(word) + @num) % @size
+#   end
+#
+#   def convert_words(words)
+#     words.each_char do |word|
+#       @convert_data += @data[rotate_index(word)]
+#     end
+#     @convert_data
+#   end
+# end
+#
+# alp = Alphabet.new(13)
+# puts alp.convert_words("uryyb")
 
 
-class Alphabet
-  attr_reader :data
-  def initialize(num)
-    @data = ("a".."z").to_a
-    @size = @data.size
-    @convert_data = ""
-    @num = num
-  end
-
-  def search_index(word)
-    @data.index(word)
-  end
-
-  def rotate_index(word)
-    (search_index(word) + @num) % @size
-  end
-
-  def convert_words(words)
-    words.each_char do |word|
-      @convert_data += @data[rotate_index(word)]
-    end
-    @convert_data
-  end
-end
-
-alp = Alphabet.new(13)
-puts alp.convert_words("uryyb")
+legs = 32
+heads = 10

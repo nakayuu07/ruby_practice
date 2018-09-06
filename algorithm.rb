@@ -1,3 +1,4 @@
+require "pry"
 # num = rand 4
 #
 # if num == 0
@@ -488,20 +489,7 @@
 #   c * 2
 # end
 
-
-# bingo_number = [1,2,3,4,5,6]
-# new_bingo_number = []
-# bingo_number.each do |s|
-#   new_bingo_number << s.to_s
-# end
 #
-# new_bingo_number =  bingo_number.map do |s|
-#    s.to_s
-# end
-#
-# new_bingo_number = bingo_number.map { |s| s.to_s}
-#
-# new_bingo_number = bingo_number.map(&:to_s)
 
 # def add(x,y)
 #   x + y
@@ -641,12 +629,212 @@
 # end
 #
 # add(1,2)
-mojinagasa = "12345"
-mojinagasa = mojinagasa.split("")
-str_mojinagasa = []
-i = 0
-for mojinagasa in [] do
-mojinagasa[i] != nil
-i += 1
-end
-puts i
+
+
+# ["a", "b", "c"].each_with_index do |alpha, i|
+#   puts "#{i + 1}: #{alpha}"
+# end
+
+# puts "第1~10回大会のオリンピック一覧"
+#
+# olympics = [
+#   { year: 1896, city: "アテネ" },
+#   { year: 1900, city: "パリ" },
+#   { year: 1904, city: "セントルイス", note: "アメリカ初開催" },
+#   { year: 1908, city: "ロンドン" },
+#   { year: 1912, city: "ストックホルム" },
+#   { year: 1916, city: "ベルリン", note: "第一次世界大戦で中止" },
+#   { year: 1920, city: "アントワープ" },
+#   { year: 1924, city: "パリ", note: "同じ都市での2回目の開催は初" },
+#   { year: 1928, city: "アムステルダム" },
+#   { year: 1932, city: "ロサンゼルス" }
+# ]
+#
+# olympics.each do |olympic|
+#   puts "---------------------"
+#   binding.pry
+#   if olympic[:note]
+#     puts "#{olympic[:year]}年#{olympic[:city]}大会。一口メモ：#{olympic[:note]}"
+#   else
+#     puts "#{olympic[:year]}年#{olympic[:city]}大会"
+#   end
+# end
+
+
+# def discount(price)
+#   return price
+#   price / 2
+# end
+#
+# p discount(15000)
+# p discount(7500)
+
+
+
+# def division(a,b)
+#   return "0は無理" if a  == 0 || b == 0
+#   a / b
+# end
+# #
+# p division(2,0)
+# p division(4,2)
+# #
+#
+# def discount(price)
+#   return price / 2
+# end
+#
+# puts "テレビがセール中です！"
+#
+# half_price = discount(15000)
+# puts "特別価格で#{half_price}円です"
+
+
+# a = ["fire", "water", "wind"]
+# b = a.clone
+# c = a
+# a.concat(["metal"])
+#
+# p a == b
+# p a == c
+
+
+# def change_word(str)
+#   arr = []
+#   split_words = str.split("")
+#   split_words.each do |word|
+#     if word == word.downcase
+#        arr << word.upcase
+#     else
+#        arr << word.downcase
+#     end
+#   end
+#   arr.join
+# end
+#
+# p change_word("aA")
+# a = 3
+# b = 5
+# c = 8
+#
+# def bigger(a ,b)
+#  return a if a > b
+#  b
+# end
+#
+# def biggest(a,b,c)
+#   return bigger(a,b)  if bigger(a,b) > c
+#   c
+# end
+#
+# def median(a,b,c)
+#   biggest_number = biggest(a,b,c)
+#   if biggest_number == a
+#     bigger(b,c)
+#   elsif biggest_number == b
+#     bigger(a,c)
+#   else
+#     bigger(a,b)
+#   end
+# end
+#
+# puts median(a,b,c)
+#  require "pry"
+# class Menu
+#   attr_accessor :name
+#   attr_accessor :price
+#
+#   def initialize(name:, price:)
+#     self.name = name
+#     self.price = price
+#   end
+#
+#   def info
+#     return "#{self.name} #{self.price}円"
+#   end
+#
+#   def get_total_price(count)
+#     total_price = self.price * count
+#     if count >= 3
+#       total_price  -= 100
+#     end
+#     return total_price
+#   end
+# end
+#
+# menu1 = Menu.new(name: "ピザ", price: 800)
+# menu2 = Menu.new(name: "すし", price: 1000)
+# menu3 = Menu.new(name: "コーラ", price: 300)
+# menu4 = Menu.new(name: "お茶", price: 200)
+#
+# menus = [menu1, menu2, menu3, menu4]
+#
+# index = 0
+# menus.each do |menu|
+#   puts "#{index}. #{menu.info}"
+#   index += 1
+# end
+#
+# puts "--------------"
+# puts "メニューの番号を選択してください"
+#
+# order = gets.chomp.to_i
+#
+# selected_menu = menus[order]
+#
+# puts "選択されたメニュー: #{selected_menu.name}"
+#
+# puts "個数を入力してください(3つ以上で100円割引)"
+#
+# count = gets.chomp.to_i
+#
+# puts "お会計は#{selected_menu.get_total_price(count)}円です"
+
+# numbers = [1,2,3,4,5,6]
+# str_numbers = []
+# numbers.each do |s|
+#   str_numbers << s.to_s
+# end
+# p str_numbers
+# "=================="
+#
+# str_numbers = numbers.each do |s|
+#   s.to_s
+# end
+#
+# p str_numbers
+# p "================="
+# str_numbers =  numbers.map do |s|
+#    s.to_s
+# end
+# p str_numbers
+# "=================="
+# str_numbers = numbers.map { |s| s.to_s}
+# p str_numbers
+# "=================="
+# str_numbers = numbers.map(&:to_s)
+# p str_numbers
+#
+# def change_number(numbers)
+#   str_numbers = numbers.each do |s|
+#     s.to_s
+#   end
+#   str_numbers
+# end
+#
+# numbers = [1,2,3,4,5,6]
+# p change_number(numbers)
+# log_size = gets.to_i
+# search_word = gets
+# search_word.delete!("\n")
+# logs = ["pizza", "paiza", "aizu", "ai", "sai"]
+#
+# search_log = []
+# i = 0
+# logs.each do |log|
+#   if log.include?(search_word)
+#     p log
+#     i += 1
+#   end
+#   break if i == log_size
+# end
